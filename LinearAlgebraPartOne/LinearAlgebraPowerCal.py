@@ -24,8 +24,8 @@ def get_models_power_cal():
         model_one = model_two_total()+(avg_power() *1)
         model_two = model_one_total()+(avg_power() * 4)
         if model_one==model_two:
-            print(f'Number of days to reach same production of power :{model_two} kj')
-            print(f'Total production of two : {model_one+model_two} kj')
+            print(f'Power production of Model One :{model_one} and Power production of Model Two :{model_two}  kj')
+            print(f'Total production of Model One and Model Two : {model_one+model_two} kj')
         break
 if __name__ == '__main__':
     main()
