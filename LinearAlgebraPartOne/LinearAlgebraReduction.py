@@ -16,11 +16,14 @@ def main():
     print(f'from NumPy-----------------------------------------------')
     print(f'Reduction Matrices: {_reduction_sum}')
     print(f'Reduction Total Matrices: {_reduction_sum.sum()}')
+    print(f'Reduction Sum of Axis Matrices: {_reduction_sum.sum(axis=0)}')
+    print(f'Reduction Sum of Axis Matrices: {_reduction_sum.sum(axis=1)}')
     # From torch
     _reduction_sum_torch = reduction_sum_torch()
     print(f'from Torch-----------------------------------------------')
     print(f'Reduction Matrices: {_reduction_sum_torch}')
     print(f'Reduction Total Matrices: {_reduction_sum_torch.sum()}')
+
 def reduction_sum():
     return LinearAlgReduction.reduction_matrices
 def reduction_sum_torch():
