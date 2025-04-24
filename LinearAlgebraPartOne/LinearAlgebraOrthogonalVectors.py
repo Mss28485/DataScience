@@ -1,6 +1,6 @@
 #  Copyright (c) 2025.
 import numpy as np
-from numpy import ma
+
 class LinearAlgOrthogonalVector:
     def __init__(self,orthogonal_vector_x,orthogonal_vector_y):
         self.orthogonal_vector_x = np.array(orthogonal_vector_x)
