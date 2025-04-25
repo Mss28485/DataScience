@@ -8,8 +8,10 @@ class LinearAlgZeroVector:
 def main():
     zero_vector()
 def zero_vector():
-    _zero_vector = LinearAlgZeroVector(3,4)
+    _zero_vector = LinearAlgZeroVector(3,3)
     print(f'Zero Array One : {_zero_vector.zero_vector_one}')
-    print(f'Zero Array One : {_zero_vector.zero_vector_one,_zero_vector.zero_vector_two}')
+    print(f'Zero Array Two : {_zero_vector.zero_vector_two}')
+    _zero_vector_combination = np.stack((_zero_vector.zero_vector_one,_zero_vector.zero_vector_two),axis=0)
+    print(f'Zero Array One : {_zero_vector_combination}')
 if __name__ == '__main__':
     main()

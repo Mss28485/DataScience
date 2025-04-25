@@ -17,6 +17,7 @@ def plots():
     plot.ylabel('distance (in km)')
     ax.set_xlim([0, 40])
     ax.set_ylim([0, 100])
+    print(LinearAlgPlot.distance_cop)
     ax.plot(LinearAlgPlot.time,LinearAlgPlot.distance_robber,color='green')
     ax.plot(LinearAlgPlot.time,LinearAlgPlot.distance_cop,color='red')
     plot.axvline(x=30, color='purple', linestyle='--')

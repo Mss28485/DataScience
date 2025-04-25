@@ -7,9 +7,6 @@ class LinearAlgPowerCalculation:
         pass
 def main():
     get_models_power_cal()
-def avg_loop():
-    for x in range(10):
-        pass
 def avg_power():
     avg_power_generation_one_two = (LinearAlgPowerCalculation.model_one+LinearAlgPowerCalculation.model_two)/2
     return avg_power_generation_one_two
